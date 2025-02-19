@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+           
+            background: #c94b4b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4b134f, #c94b4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+            overflow: scroll;
+
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: 200px 100px 300px 200px 100px 100px 200px;
+            grid-template-rows: 200px 200px 200px;
+            background-color: white;
+            padding: 3px;
+        }
+
+        .box {
+            background-color: brown;
+            margin: 5px;
+             display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center; 
+            color: white;
+            border-radius: 3%;
+        }
+
+        .box1 {
+            background: #1488CC;
+            background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+
+            background: linear-gradient(to right, #2B32B2, #1488CC);
+            grid-area: 1/1/2/3;
+        }
+
+        .box2 {
+            background: #fe8c00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            grid-area: 1/3/2/6;
+        }
+
+        .box3 {
+            background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            grid-area: 1/6/2/8;
+        }
+
+        .box4 {
+            background: #E44D26;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F16529, #E44D26);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F16529, #E44D26); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            grid-area: 2/1/3/4;
+
+
+        }
+
+        .box5 {
+            background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            grid-area: 2/4/3/8;
+        }
+
+        .box6 {
+            background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            grid-area: 3/1/4/2;
+        }
+
+        .box7 {
+            background: #D38312;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            grid-area: 3/2/4/5;
+        }
+
+        .box8 {
+            background: #C33764;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            grid-area: 3/5/4/7;
+        }
+
+        .box9 {
+            background: #C33764;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            grid-area: 3/7/4/8;
+        }
+        .img1{
+            width: 200px;
+            min-height: 150px;
+            max-height: 150px;
+        }
+        .p2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .p3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .p6{
+           font-size: 30px;
+        }
+            .img{
+                width:200px;
+                min-height: 150px;
+                max-height: 150px;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="boxes">
+            <div class="box box1">
+                <h1>1260</h1>
+                <p>Sixes</p>
+            </div>
+            <div class="box box2">
+                <div class="p2">
+                    <div class="p3">
+                        <p>Winners</p>
+                        <h1>Chennai SuperKings</h1>
+                    </div>
+                    <img src="lion.png"class="img">
+                </div>
+            </div>
+            <div class="box box3">
+                <h1>14</h1>
+                <p>Hundreds</p>
+            </div>
+            <div class="box box4">
+                <div class="p2">
+                    <img src="c1.avif" class="img1">
+                    <div class="p3">
+                        <h1>Virat Kohil</h1>
+                <p>Total Runs  741</p>
+                <p> Strike Rate  154.7</p>
+                <p>Matches Played  15</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="box box5">
+                <div class="p2"><img src="c2.avif" class="img1"> 
+                    <div class="p3">
+                        <button>FiarPlay</button>
+                       <h1>Sunrisers Hyderabad</h1>
+                       <p>points  173</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box box6">
+                    <i class="fa-solid fa-image p6"></i>
+                     <p>pics</p>
+            </div>
+            <div class="box box7">
+                <h1>Interesting Facts</h1>
+                <p>"Kolkata Knight Riders Crowned Champions for the third time,having</p>
+               <p>Previously won in 2012,2014"</p>
+                    
+            </div>
+            <div class="box box8">
+                <i class="fa-regular fa-clipboard p6"></i>
+                <p>Match Reports</p>
+            </div>
+            <div class="box box9">
+                <i class="fa-brands fa-square-youtube p6"></i>
+                <p>Highlights</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
